@@ -14,30 +14,27 @@ jobs:
         uses: rlespinasse/github-slug-action@v3.x
       - name: 'Deploy to Github (prod; `main` only)'
         if: github.ref == 'refs/heads/main'
-        uses: shalzz/zola-deploy-action@v0.12.2
+        uses: shalzz/zola-deploy-action@v0.15.2-1
         env:
           PAGES_BRANCH: gh-pages
           BUILD_THEMES: false
           BUILD_DIR: .
-          TOKEN: ${{ secrets.TOKEN }}
       - name: 'Build Static Site (drafts; `main` only)'
         if: github.ref == 'refs/heads/main'
-        uses: shalzz/zola-deploy-action@v0.12.2
+        uses: shalzz/zola-deploy-action@v0.15.2-1
         env:
           BUILD_ONLY: true
           BUILD_THEMES: false
           BUILD_DIR: .
           BUILD_FLAGS: --drafts --base-url https://multiplanar3dprinter.netlify.app
-          TOKEN: ${{ secrets.TOKEN }}
       - name: 'Build Static Site (drafts; if not `main`)'
         if: github.ref != 'refs/heads/main'
-        uses: shalzz/zola-deploy-action@v0.12.2
+        uses: shalzz/zola-deploy-action@v0.15.2-1
         env:
           BUILD_ONLY: true
           BUILD_THEMES: false
           BUILD_DIR: .
           BUILD_FLAGS: --drafts --base-url https://${{ env.GITHUB_REF_SLUG_URL }}--multiplanar3dprinter.netlify.app
-          TOKEN: ${{ secrets.TOKEN }}
       - name: 'Deploy to Netlify'
         uses: nwtgck/actions-netlify@v1.1
         with:
