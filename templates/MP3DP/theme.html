@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117362578-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-117362578-1');
-	</script>
-	<!-- End Google Analytics -->
-	<title>{% block title %}{% endblock title %}{% if current_path != "/" %} | BA{% endif %}</title>
+	<title>{% block title %}{% endblock title %}{% if current_path != "/" %} | MP3DP{% endif %}</title>
 	<link rel="icon" type="image/png" href="/favicon.png">
 	<link rel="stylesheet" href="/css/reset.css" />
 	<link rel="stylesheet" href="/css/mobile-base.css" />
@@ -18,11 +9,14 @@
 	<link rel="stylesheet" media="(min-width: 600px)" href="/css/nav.css" />
 	<link rel="stylesheet" media="(min-width: 600px)" href="/css/tablet.css" />
 	<link rel="stylesheet" media="(min-width: 1000px)" href="/css/desktop.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta charset="UTF-8" />
-	<meta name="description" content="My Personal Website" />
-	<meta name="keywords" content="personal, resume, robotics, robots, control systems, control, development" />
-	<meta name="author" content="Brendan Arciszewski" />
+	<meta name="description" content="Multi-Planar 3D Printer" />
+	<meta name="keywords" content="project, fydp, mechatronics, robotics, robots, control systems, waterloo" />
+	<meta name="author" content="Brendan Arciszewski, Louie Chen, Lucille Huang, Edward Yang" />
 	{% block extra_head %}{% endblock extra_head %}
 </head>
 <body>
