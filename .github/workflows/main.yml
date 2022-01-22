@@ -19,7 +19,7 @@ jobs:
           PAGES_BRANCH: gh-pages
           BUILD_THEMES: false
           BUILD_DIR: .
-          TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Build Static Site (drafts; `main` only)'
         if: github.ref == 'refs/heads/main'
         uses: shalzz/zola-deploy-action@v0.15.2-1
@@ -44,7 +44,7 @@ jobs:
           deploy-message: "Deploy from GitHub Actions"
           enable-pull-request-comment: false
           enable-commit-comment: true
-          github-token: ${{ secrets.TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           netlify-config-path: ./netlify.toml
           alias: ${{ env.GITHUB_REF_SLUG_URL }}
         env:
