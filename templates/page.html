@@ -1,0 +1,11 @@
+{% import "macros/page.html" as page_macros %}
+
+{% extends "MP3DP/static.html" %}
+
+{% block content %}
+<div id="con_article">
+    <article>{{ page.content | safe }}</article>
+    {{ page_macros::page_info(page=page) }}
+</div>
+
+{% endblock content %}

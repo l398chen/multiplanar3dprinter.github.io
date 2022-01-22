@@ -1,0 +1,6 @@
+{% extends "MP3DP/static.html" %}
+
+{% block title %}{{ section.title }}{% endblock title %}
+{% block content %}<article id="con_article">
+	{{ section.content | safe }}
+</article>{% endblock content %}

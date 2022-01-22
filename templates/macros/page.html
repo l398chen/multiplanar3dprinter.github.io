@@ -1,0 +1,32 @@
+{% macro page_info(page) %}
+<div class="article-info">
+    {% if page.date %}
+    <div class="article-date">{{ page.date | date(format="%Y-%m-%d") }}</div>
+    {% endif %}
+    <div class="article-taxonomies">
+        {% if page.taxonomies.tags %}
+            <ul class="article-tags">
+                {% for tag in page.taxonomies.tags %}
+                <li><a href='{{ get_taxonomy_url(kind="tags", name=tag) | safe }}'>#{{ tag }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</div>
+{% endmacro page_info %}
+
+{% macro page_summary(page) %}
+<article class="post" role="listitem">
+    <header> 
+        <h1>
+            <a href="{{ page.permalink }}">{{ page.title }}</a>
+        </h1>
+    </header>
+
+    {% if page.summary %}
+    <div class="content post-summary">
+        {{ page.summary | markdown | safe }}
+    </div>
+    {% endif %}
+</article>
+{% endmacro %}

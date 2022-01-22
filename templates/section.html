@@ -1,0 +1,21 @@
+{% import "macros/page.html" as page_macros %}
+{% extends "MP3DP/static_section.html" %}
+
+{% block content %}
+<div id="con_article">
+	<article id="section-summary">
+		{{ section.content | safe }}
+	</article>
+
+	<hr/>
+
+	<section role="list">
+		{% for page in section.pages %}
+		{% if not loop.first %}
+			<hr/>
+		{% endif %}
+		{{ page_macros::page_summary(page=page) }}
+		{% endfor %}
+	</section>
+</div>
+{% endblock content %}
