@@ -13,3 +13,5 @@ We are Mechatronics Engineering students at the University of Waterloo.
 ## About the Project
 
 MP3DP-DP is a project to reduce support material in FDM 3D printers.
+
+![Rendering of Project Design](/media/PrintHeadRender.png)
