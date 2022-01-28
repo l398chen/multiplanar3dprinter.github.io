@@ -1,9 +1,15 @@
 /*This file should only apply for screens larger than 600px wide*/
-main.withSidebar {
+main {
 	grid-template-columns: 72% 28%;
 	grid-template-areas:
 		"con_nav     con_nav"
 		"con_article con_sidebar";
+}
+#con_article {
+	grid-column-end: con_sidebar !important;
+}
+#con_sidebar + #con_article {
+	grid-column-end: con_article !important;
 }
 
 footer > div#row1 {
