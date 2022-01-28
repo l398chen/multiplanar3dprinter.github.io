@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://multiplanar3dprinter.github.io/sitemap.xml
