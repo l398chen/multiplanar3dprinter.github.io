@@ -5,7 +5,11 @@
 {% block content %}
 <div id="con_article">
     <article>{{ page.content | safe }}</article>
+</div>
+{% endblock content %}
+
+{% block sidebar %}
+<div id="con_sidebar">
     {{ page_macros::page_info(page=page) }}
 </div>
-
-{% endblock content %}
+{% endblock sidebar %}
