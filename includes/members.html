@@ -1,5 +1,22 @@
 <aside id="members">
-	<header><h3>Members</h3></header>
+	<style>
+		#members > ul {
+			text-align: justify;
+			padding: 0;
+		}
+		#members > ul > li {
+			display: inline-block;
+		}
+		#members > ul > li:before {
+			content: "• ";
+		}
+		#members > ul:after {
+			content: '';
+			width: 100%;
+			display: inline-block;
+		}
+	</style>
+	<header><h2>Members</h2></header>
 	<ul>
 		<li>Brendan Arciszewski</li>
 		<li>Louie Chen</li>
