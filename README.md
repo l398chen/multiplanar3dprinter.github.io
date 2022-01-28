@@ -1,6 +1,8 @@
 # FYDP Website
 A homepage and a blog.
 
+Install [Zola](https://www.getzola.org/documentation/getting-started/installation/) to start.
+
 ## Images
 These should go under `static/media/<image>` and are referenced like `/media/<image>` within Markdown or HTML.
 
