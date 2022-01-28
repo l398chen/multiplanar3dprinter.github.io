@@ -205,6 +205,9 @@ main > div#con_sidebar {
 	margin-bottom: 2rem;
 }
 
+#con_article img {
+	max-width: 100%;
+}
 
 #con_article > section[role=list] > article[role=listitem] {
 	margin-bottom: 2rem;
