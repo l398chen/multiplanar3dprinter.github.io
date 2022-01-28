@@ -7,8 +7,8 @@ html {
 	--main-margin: 0 auto;
 	--module-padding: 1rem 3rem;
 	--module-background-colour: #EAEAEA;
-	--highlight-colour: #3BB03B;
-	--highlight-colour-wcag-aa-large: #339933; /*3D703D, 40733F, 417540, 287728*/
+	--highlight-colour: #00329f89;/*#006a98b5;*/
+	--highlight-colour-wcag-aa-large: #00329f;
 	--link-colour: #0041C7;
 	--link-visited-colour: #0034A1;
 	--unemphasized-nav: #696969;
