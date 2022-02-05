@@ -129,13 +129,6 @@ section#header {
 section#header header {
 	grid-area: header;
 }
-section#header img#headshot {
-	float: right;
-	height: 20vw;
-	max-height: 150px;
-	margin-top: calc(-60px - 3vw);
-	border-radius: 50%;
-}
 section#header h1 {
 	width: 70%;
 }
@@ -144,6 +137,23 @@ div#before-con {
 	grid-area: before-con;
 	background: var(--module-background-colour);
 	padding: var(--module-padding);
+}
+#members ul {
+	text-align: justify;
+	padding: 0;
+}
+#members ul li {
+	display: inline-block;
+}
+#members ul:after {
+	content: '';
+	width: 100%;
+	display: inline-block;
+}
+#members img.headshot {
+	height: 20vw;
+	max-height: 150px;
+	border-radius: 50px;
 }
 
 div#after-con {

@@ -10,11 +10,9 @@
 
 <section role="banner" id="header">
 	<header><h1>{% block title %}{{ page.title }}{% endblock title %}</h1></header>
-	<img src="/media/group.jpg" id="headshot" alt="Group Photo" />
 </section>
-{% if extra.before_con %}
-<div id="before-con">{{ load_data(path=extra.before_con) | safe }}</div>
-{% endif %}
+{% block header %}
+{% endblock header %}
 <main>
 	{% block sidebar %}{% if extra.con_sidebar_1 or extra.con_sidebar_2 %}<div id="con_sidebar">
 		{% if extra.con_sidebar_1 %}{{ load_data(path=extra.con_sidebar_1) | safe }}{% endif %}

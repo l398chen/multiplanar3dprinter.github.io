@@ -4,3 +4,4 @@
 public/
 /target
 .DS_Store
+static/processed_images
