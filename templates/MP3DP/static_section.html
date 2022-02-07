@@ -14,8 +14,10 @@
 	{% set lasts = ["Chen", "Huang", "Arciszewski", "Yang",] %}
 	{% for img in ["Louie", "Lucille", "Brendan", "Edward",] %}
 	{% set image = resize_image(path="/media/headshots/" ~ img ~ ".jpg", width=100, height=150, op="fill") %}
-	<li><img src='{{ image.url }}' class="headshot" alt="Photo of {{img}}" />
-	<div>{{img}} {{lasts[loop.index0]}}</div></li>
+	<li><figure>
+		<img src='{{ image.url }}' class="headshot" alt="Photo of {{img}}" />
+		<figcaption>{{img}} {{lasts[loop.index0]}}</figcaption>
+	</figure></li>
 	{% endfor %}
 </ul>
 </aside>

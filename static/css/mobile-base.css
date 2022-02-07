@@ -20,8 +20,7 @@ body {
 }
 
 p,
-blockquote,
-figure {
+blockquote {
 	margin: 1rem 0 0 0;
 	padding: 0;
 }
@@ -144,6 +143,8 @@ div#before-con {
 }
 #members ul li {
 	display: inline-block;
+	vertical-align: top;
+	text-align: center;
 }
 #members ul:after {
 	content: '';
