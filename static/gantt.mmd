@@ -1,0 +1,36 @@
+gantt
+    dateFormat YYYY-MM-DD
+    axisFormat %Y%b%d
+    section Design
+    Start of F21 :milestone, F21, 2021-09-01, 1d
+    Idea/Problem Brainstorming :a1, 2021-09-07, 1w
+    Problem Definition  :a2, after a1, 1w
+    Concept Solutions  :a3, after a2, 1w
+    Design Selection  :a4, after a3, 1w
+    Reading Week  :rw, after a4, 1w
+    Patent Review  :a5, after rw, 1w
+    PDP :milestone, PDP, 2021-11-02, 1d
+    Detailed Design Refinement  :a8, after PDP, 2w
+    FDP :milestone, FDP, 2021-11-30, 1d
+    F21 Final Report :milestone, f21fr, 2021-12-07, 1d
+
+    section Build
+    Start of W22  :milestone, W22, 2022-01-05, 1d
+    End of Classes :milestone, 2022-04-01, 1d
+    Iteration & Testing :it, after sw elec mech, 3w
+    Symposium :milestone, 2022-03-11, 1d
+
+    section Mechanical
+    Design :mechdesign, after a8, 9w
+    Manufacture :mech, after mechdesign, 4w
+
+    section Electrical
+    Controller Research :elecselec, after a8, 3w
+    Custom Design :elecdesign, after elecselec, 7w
+    Controller Integration & Debugging :elec, after elecdesign, 3w
+
+    section Software
+    Open-Source Software Architecture Review :softreview, after a8, 4w
+    Slicer :slicer, after W22, 3w
+    Firmware :fw, after W22, 4w
+    Integration :sw, after slicer fw, 2w
