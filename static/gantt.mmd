@@ -16,21 +16,27 @@ gantt
 
     section Build
     Start of W22  :milestone, W22, 2022-01-05, 1d
-    End of Classes :milestone, 2022-04-01, 1d
-    Iteration & Testing :it, after sw elec mech, 3w
-    Symposium :milestone, 2022-03-11, 1d
+    Final Report :milestone, 2022-04-10, 1d
+    Verification & Integration:it, 2022-02-26, 2022-03-18
+    Demo :milestone, 2022-03-09, 1d
+    Symposium :milestone, symposium, 2022-03-18, 1d
 
     section Mechanical
     Design :mechdesign, after a8, 9w
-    Manufacture :mech, after mechdesign, 4w
+    Manufacture :mech, after mechdesign, 2022-03-01
+    Assembly :mechassm, 2022-03-01, 3d
+    Testing & Iteration :after mechassm, 2022-03-18
 
     section Electrical
     Controller Research :elecselec, after a8, 3w
-    Custom Design :elecdesign, after elecselec, 7w
-    Controller Integration & Debugging :elec, after elecdesign, 3w
+    Custom Design Research:elecdesign, after W22, 2022-02-05
+    Block Diagram & Schematic Layout :elecdiag, after elecdesign, 2022-02-19
+    PCB Layout :elecpcb, after elecdiag, 2022-02-26
+    PCB Shipping :elecship, after elecpcb, 2022-03-12
+    Testing & Integration :elec, after elecship, 2022-03-18
 
     section Software
     Open-Source Software Architecture Review :softreview, after a8, 4w
-    Slicer :slicer, after W22, 3w
-    Firmware :fw, after W22, 4w
-    Integration :sw, after slicer fw, 2w
+    Slicer :slicer, after W22, 2022-03-12
+    Firmware :fw, after W22, 2022-03-18
+    Integration :sw, 2022-03-04, 2022-03-18
