@@ -12,7 +12,7 @@ We are Mechatronics Engineering students at the University of Waterloo and this 
 
 ## Results
 We received the Prototype Quality Award! Thank you
-[Baylis](https://www.baylismedical.com/) for sponsoring this award.
+[Baylis][baylis] for sponsoring this award.
 
 ## About the Project
 
@@ -20,7 +20,14 @@ The Multi-Planar 3D Printer is a revolutionary 3D printhead design for the Ender
 
 ![Rendering of Project Design](/media/PrintHeadRender.png)
 
+Also, below you can see our poster, as seen at the symposium.
+
+[![Symposium Poster](/media/FYDP-Poster.jpg)][poster]
+
 ## Other Teams
-View other FYDP teams on the [Waterloo Engineering 2022 Capstone
-Design](https://www.eng.uwaterloo.ca/2022-capstone-design/mechatronics/participants/)
-website. (Bonus: you can view our marketing video there too.)
+View other FYDP teams on the [Waterloo Engineering 2022 Capstone Design][uwaterloo-capstone] website. (Bonus: you can
+view our marketing video there too.)
+
+[baylis]: https://www.baylismedical.com/
+[poster]: /media/FYDP-Poster.pdf "Symposium Poster"
+[uwaterloo-capstone]: https://www.eng.uwaterloo.ca/2022-capstone-design/mechatronics/participants/
